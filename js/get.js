@@ -27,21 +27,21 @@ if(userAgent.indexOf('msie') != -1 ||
 
 var userOS = window.navigator.userAgent.toLowerCase();
 
-if(userOS.indexOf('windows nt') !== -1) {
+if(userOS.indexOf("windows nt") !== -1) {
   console.log("Microsoft Windows");
-  document.getElementById('os-name').innerHTML = '<p>　Microsoft Windows</p>'
+  document.getElementById('os-name').innerHTML = '<p>　Microsoft Windows</p>';
 } else if(userOS.indexOf('android') !== -1) {
   console.log("Android");
-  document.getElementById('os-name').innerHTML = '<p>　Android</p>'
+  document.getElementById('os-name').innerHTML = '<p>　Android</p>';
 } else if(userOS.indexOf('iphone') !== -1 || ua.indexOf("ipad") !== -1) {
   console.log("iOS");
-  document.getElementById('os-name').innerHTML = '<p>　iOS</p>'
-} else if(userOS.indexOf('mac os x') !== -1) {
+  document.getElementById('os-name').innerHTML = '<p>　iOS</p>';
+} else if(userOS.indexOf(('mac os x') !== -1)) {
   console.log("macOS");
   document.getElementById('os-name').innerHTML = '<p>　macOS</p>';
 } else {
-  console.log("お使いのOSを調べることができませんでした");
   document.getElementById('os-name').innerHTML = '<p>　お使いのOSを調べることができませんでした。</p>';
+  console.log("お使いのOSを調べることができませんでした");
 }
 
 var language = (window.navigator.languages && window.navigator.languages[0]) ||
