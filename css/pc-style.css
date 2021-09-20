@@ -1,0 +1,46 @@
+/*PC用表示*/
+/*スマホ用ヘッダー非表示*/
+.sp-header{
+    display: none;
+}
+.title-picture{
+    text-align: center;
+}
+body {
+    margin: 0;
+    padding: 0;
+ }
+ .header-iframe{
+    width: 100%;  
+    height: 380px;
+ }
+ h3 {
+    position: relative;
+    padding: 1.5rem 1rem;
+    font-family: sans-serif;
+  }
+  
+  h3:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    content: '';
+    background-image: -webkit-repeating-linear-gradient(135deg, #000, #000 1px, transparent 2px, transparent 5px);
+    background-image: repeating-linear-gradient(-45deg, #000, #000 1px, transparent 2px, transparent 5px);
+    background-size: 7px 7px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer-iframe{
+  position: absolute;/*←絶対位置*/
+  bottom: 0; /*下に固定*/
+  text-align: center; 
+  background: color #808080; 
+  width: 100%;
+  height: 40px;
+}

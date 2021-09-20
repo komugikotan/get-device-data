@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="image/x-icon" href="logo.jpg">
+        <!--画面サイズ別読み込み-->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="css/pc-style.css" media="only screen and (min-width:501px)">
+        <link rel="stylesheet" href="css/sp-style.css" media="only screen and (max-width:500px)">
+        <!--JQuery読み込み-->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <title>お使いのPCの情報を取得</title>
+    </head>
+    <body>
+        <header>
+            <iframe class="header-iframe" src="header.html" scrolling="no" frameborder="0" style="border: none;"></iframe>
+        </header>
+        <main>
+            <h3>お使いのブラウザ</h3><p id="browser-name">取得しています...</p>            
+            <h3>お使いのOS</h3><p id="os-name">取得しています...</p>
+            <h3>お使いのブラウザの言語</h3><p id="language-name">取得しています...</p>
+            <h3>お使いのIPv4アドレス</h3><p id="ip-address">取得しています...</p>
+            <h3>お使いのブラウザのウィンドウサイズ</h3><p id="display-size">取得しています...</p>
+            <script src="js/get.js"></script>
+            <p style="text-align: center;">※JavaScriptが無効になっていると、表示することができません。</p>
+            <p style="text-align: center;">当サイトは、無料でご利用いただけます。料金が発生することはありません。</p>
+        </main>
+        <footer>
+            <!--<iframe class="footer-iframe" src="footer.html" scrolling="no" frameborder="0" style="border: none;"></iframe>-->
+        </footer>
+    </body>
+</html>     
