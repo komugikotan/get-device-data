@@ -27,7 +27,10 @@ if(userAgent.indexOf("windows nt") !== -1) {
     document.getElementById('os-name').innerHTML = "iOS, or iPad OS";
   } else if(userAgent.indexOf("mac os x") !== -1) {
     document.getElementById('os-name').innerHTML = "macOS";
-  } else {
+  } else if(userAgent.indexOf("ipad") !== -1){
+    document.getElementById('os-name').innerHTML = "iPad OS";
+  }
+   else {
     console.log("OS名がリストにありません。");
   }
 
