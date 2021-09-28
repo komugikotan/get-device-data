@@ -24,12 +24,12 @@ if(userAgent.indexOf("windows nt") !== -1) {
   } else if(userAgent.indexOf("android") !== -1) {
     document.getElementById('os-name').innerHTML = "Android";
   } else if(userAgent.indexOf("iphone") !== -1 || userAgent.indexOf("ipad") !== -1) {
-    document.getElementById('os-name').innerHTML = "iOS, or iPad OS";
-  } else if(userAgent.indexOf("mac os x") !== -1) {
-    document.getElementById('os-name').innerHTML = "macOS";
+    document.getElementById('os-name').innerHTML = "iOS";
   } else if(userAgent.indexOf("ipad") !== -1){
     document.getElementById('os-name').innerHTML = "iPad OS";
-  }
+  }else if(userAgent.indexOf("mac os x") !== -1) {
+    document.getElementById('os-name').innerHTML = "macOS";
+  } 
    else {
     console.log("OS名がリストにありません。");
   }
